@@ -7,21 +7,20 @@ import { USERS_ENDPOINT } from "../../constants/api_endpoints";
   providedIn: "root"
 })
 export class UsersService {
-  constructor(httpClient: HttpClient) {}
+  constructor(public httpClient: HttpClient) {}
 
-  createUser(username, password, email, token) {}
+  createUser(username, password, email, pushSub) {
+    this.httpClient.post("http://localhost:3000/users", {
+      username: username,
+      password: password,
+      email: email,
+      pushSub: pushSub
+    });
+  }
 
   sendSubscriptionToTheServer(subscription) {
     //return this.HttpClient.post(SERVER_URL, subscription);
   }
-
-  // postUserToken(uid, userToken, data) {
-  //   const request = new HttpRequest(
-  //     "POST",
-  //     environment.API_ADDRESS + USERS_ENDPOINT,
-  //     data
-  //   );
-  // }
 
   loginUser(username, password) {}
 }

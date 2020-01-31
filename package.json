@@ -28,8 +28,10 @@
     "@angular/service-worker": "~8.2.14",
     "@nguniversal/express-engine": "^8.2.6",
     "@nguniversal/module-map-ngfactory-loader": "v8.2.6",
+    "angular-md5": "^0.1.10",
     "express": "^4.15.2",
     "rxjs": "~6.4.0",
+    "ts-md5": "^1.2.7",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
   },
