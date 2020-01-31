@@ -1,0 +1,21 @@
+<p>homepage works!</p>
+
+<h2>LOGIN</h2>
+
+<form>
+  <div class="formGroup">
+    <div>
+      <label>
+        Adresse mail
+      </label>
+      <input [(ngModel)]="inputMail" type="email" placeholder="adresse email" type="text">
+    </div>
+  </div>
+  <div>
+    <label>Mot de passe</label>
+    <input [(ngModel)]="inputPassword" type="password" placeholder="mot de passe" type="text">
+  </div>
+  <div>
+    <button (click)="onLogin()">SE CONNECTER</button>
+  </div>
+</form>

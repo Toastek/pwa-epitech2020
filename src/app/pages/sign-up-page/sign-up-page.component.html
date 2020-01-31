@@ -1,0 +1,25 @@
+<p>sign-up-page works!</p>
+
+<h2>INSCRIPTION</h2>
+
+<div>
+  <div>
+    <label>
+      Nom Utilisateur
+    </label>
+    <input [(ngModel)]="inputUsername" type="text" placeholder="Nom utilisateur" type="text">
+  </div>
+  <div>
+    <label>
+      Adresse mail
+    </label>
+    <input [(ngModel)]="inputMail" type="email" placeholder="adresse email" type="text">
+  </div>
+</div>
+<div>
+  <label>Mot de passe</label>
+  <input [(ngModel)]="inputPassword" type="password" placeholder="mot de passe" type="text">
+</div>
+<div>
+  <button (click)="onSignUp()">S'INSCRIRE</button>
+</div>
